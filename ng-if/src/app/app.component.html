@@ -1,5 +1,7 @@
 <!-- Simulate the *ngIf using the appShow directive -->
 
-<app-product appShow></app-product>
+<app-product *appShow="show"></app-product>
 
 <button class="btn btn-danger" (click)="toggle()">Remove component</button>
+
+<ng-container #containerRef></ng-container>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, TemplateRef, ViewContainerRef } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,6 +6,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  @ViewChild('templateRef', { read: TemplateRef, static: true }) public tmplRef;
+  @ViewChild('containerRef', { read: ViewContainerRef, static: true }) public vcr;
+
   public show = true;
 
   public toggle() {

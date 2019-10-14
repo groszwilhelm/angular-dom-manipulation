@@ -3,10 +3,12 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
+import { ShowDirective } from './show.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
+    ShowDirective,
     ProductComponent
   ],
   imports: [

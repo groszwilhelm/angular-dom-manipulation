@@ -13,6 +13,9 @@ import { ModalComponent } from './modal/modal.component';
     BrowserModule
   ],
   providers: [],
+  entryComponents: [
+    ModalComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

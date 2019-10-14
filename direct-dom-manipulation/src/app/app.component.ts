@@ -17,6 +17,7 @@ export class AppComponent implements AfterViewChecked {
   }
 
   public removeComponent() {
-    document.querySelector('app-product').remove();
+    // document.querySelector('app-product').remove();
+    this.show = !this.show;
   }
 }
